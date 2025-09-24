@@ -51,7 +51,8 @@ window.onload = function() {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
         toggle_theme.innerHTML = "Light Theme";
-        theme_icon.src = "media/sun.svg";
+        document.getElementById("theme_icon").src = "media/sun.svg";
+        //theme_icon.src = "media/sun.svg";
     }
 }
 
