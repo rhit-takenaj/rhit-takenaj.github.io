@@ -34,14 +34,12 @@ function toggleDarkTheme() {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
         toggle_theme.innerHTML = "Light Theme";
-        // document.getElementById("theme_icon").src = "media/sun.svg";
         theme_icon.src = "../media/sun.svg";
         localStorage.setItem("theme", "dark");
     } else {
         html.classList.remove(html.classList[0]);
         html.classList.add("light");
         toggle_theme.innerHTML = "Dark Theme";
-        // document.getElementById("theme_icon").src = "media/moon.svg";
         theme_icon.src = "../media/moon.svg";
         localStorage.setItem("theme", "light");
     }
@@ -55,7 +53,6 @@ window.onload = function() {
         html.classList.add("dark");
         toggle_theme.innerHTML = "Light Theme";
         theme_icon.src = "../media/sun.svg";
-        // document.getElementById("theme_icon").src = "media/sun.svg";
     }
 }
 
