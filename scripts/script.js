@@ -1,3 +1,5 @@
+let html = document.getElementById("html");
+
 const home_button = document.getElementsByClassName("home_button")[0];
 home_button.addEventListener("click", function() {
     changeWebPage("index");
@@ -22,36 +24,35 @@ function changeWebPage(page) {
     window.location.assign(page + ".html")
 }
 
+
+//nav buttons from https://www.w3schools.com/js/js_window_location.asp
+
 function toggleDarkTheme() {
-    let html = document.getElementById("html");
     let theme = html.classList[0];
     if(theme === "light") {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
         toggle_theme.innerHTML = "Light Theme";
-        localStorage.setItem("theme", "dark")
+        localStorage.setItem("theme", "dark");
     } else {
         html.classList.remove(html.classList[0]);
         html.classList.add("light");
         toggle_theme.innerHTML = "Dark Theme";
-        localStorage.setItem("theme", "light")
+        localStorage.setItem("theme", "light");
     }
 }
 
 document.onload = function() {
-    let html = document.getElementById("html");
     let theme = localStorage.getItem("theme");
     if(theme === "light") {
         html.classList.remove(html.classList[0]);
         html.classList.add("light");
         toggle_theme.innerHTML = "Dark Theme";
-        localStorage.setItem("theme", "light")
     } else {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
         toggle_theme.innerHTML = "Light Theme";
-        localStorage.setItem("theme", "dark")
     }
 }
 
-//nav buttons from https://www.w3schools.com/js/js_window_location.asp
+//keeping theme consistent throughout page change from https://stackoverflow.com/questions/33176739/how-to-carry-across-changes-made-to-a-css-style-over-different-pages
