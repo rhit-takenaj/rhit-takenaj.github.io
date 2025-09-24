@@ -22,6 +22,10 @@
     text-align: center;
 }
 
+.float_right {
+    float: right;
+}
+
 .personal_info h1 {
     font-size: 2em;
 }
