@@ -1,0 +1,15 @@
+.centered {
+    text-align: center;
+}
+
+.personal_info h1 {
+    font-size: 4em;
+}
+
+.personal_info p {
+    font-size: 3em;
+}
+
+.image_of_me img {
+    width: 33%;
+}
