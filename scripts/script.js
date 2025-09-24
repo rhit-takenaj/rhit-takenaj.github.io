@@ -22,7 +22,7 @@ function changeWebPage(page) {
     window.location.assign(page + ".html")
 }
 
-function toggleDarkTheme(cur_theme) {
+function toggleDarkTheme() {
     let html = document.getElementById("html");
     let theme = html.classList[0];
     if(theme === "dark") {
