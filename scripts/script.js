@@ -29,18 +29,18 @@ function changeWebPage(page) {
 
 function toggleDarkTheme() {
     let theme = html.classList[0];
-    let theme_icon = document.getElementsByClassName("theme_icon")[0];
+    let theme_icon = document.getElementById("theme_icon");
     if(theme === "light") {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
         toggle_theme.innerHTML = "Light Theme";
-        theme_icon.src = "media/sun.svg";
+        document.getElementById("theme_icon").src = "media/sun.svg"
         localStorage.setItem("theme", "dark");
     } else {
         html.classList.remove(html.classList[0]);
         html.classList.add("light");
         toggle_theme.innerHTML = "Dark Theme";
-        theme_icon.src = "media/moon.svg";
+        document.getElementById("theme_icon").src = "media/moon.svg"
         localStorage.setItem("theme", "light");
     }
 }
