@@ -1,4 +1,5 @@
 let html = document.getElementById("html");
+const theme_icon = document.getElementById("theme_icon");
 
 const home_button = document.getElementsByClassName("home_button")[0];
 home_button.addEventListener("click", function() {
@@ -29,7 +30,6 @@ function changeWebPage(page) {
 
 function toggleDarkTheme() {
     let theme = html.classList[0];
-    let theme_icon = document.getElementById("theme_icon");
     if(theme === "light") {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
@@ -47,7 +47,6 @@ function toggleDarkTheme() {
 
 window.onload = function() {
     let theme = localStorage.getItem("theme");
-    let theme_icon = document.getElementById("theme_icon");
     if(theme === "dark") {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
