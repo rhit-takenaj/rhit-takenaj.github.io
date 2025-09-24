@@ -44,11 +44,7 @@ function toggleDarkTheme() {
 
 document.onload = function() {
     let theme = localStorage.getItem("theme");
-    if(theme === "light") {
-        html.classList.remove(html.classList[0]);
-        html.classList.add("light");
-        toggle_theme.innerHTML = "Dark Theme";
-    } else {
+    if(theme === "dark") {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
         toggle_theme.innerHTML = "Light Theme";
