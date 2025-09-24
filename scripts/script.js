@@ -28,16 +28,16 @@ function toggleDarkTheme() {
     if(theme === "dark") {
         html.classList.remove(html.classList[0]);
         html.classList.add("light");
-        toggle_theme.innerHTML = "Light Theme";
+        toggle_theme.innerHTML = "Dark Theme";
     } else {
         if(theme === "light") {
             html.classList.remove(html.classList[0]);
             html.classList.add("dark");
-            toggle_theme.innerHTML = "Dark Theme";
+            toggle_theme.innerHTML = "Light Theme";
         } else {
             html.classList.remove(html.classList[0]);
             html.classList.add("light");
-            toggle_theme.innerHTML = "Light Theme";
+            toggle_theme.innerHTML = "Dark Theme";
         }
     }
 
