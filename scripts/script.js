@@ -13,8 +13,8 @@ portfolio_button.addEventListener("click", function() {
     changeWebPage("portfolio");
 });
 
-const dark_theme = document.getElementsByClassName("dark_theme")[0];
-dark_theme.addEventListener("click", function() {
+const toggle_theme = document.getElementsByClassName("toggle_theme")[0];
+toggle_theme.addEventListener("click", function() {
     toggleDarkTheme()
 });
 
@@ -28,16 +28,16 @@ function toggleDarkTheme() {
     if(theme === "dark") {
         html.classList.remove(html.classList[0]);
         html.classList.add("light");
-        dark_theme.innerHTML = "Light Theme";
+        toggle_theme.innerHTML = "Light Theme";
     } else {
         if(theme === "light") {
             html.classList.remove(html.classList[0]);
             html.classList.add("dark");
-            dark_theme.innerHTML = "Dark Theme";
+            toggle_theme.innerHTML = "Dark Theme";
         } else {
             html.classList.remove(html.classList[0]);
             html.classList.add("light");
-            dark_theme.innerHTML = "Light Theme";
+            toggle_theme.innerHTML = "Light Theme";
         }
     }
 
