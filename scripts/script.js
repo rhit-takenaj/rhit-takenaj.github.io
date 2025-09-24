@@ -14,5 +14,7 @@ portfolio_button.addEventListener("click", function() {
 });
 
 function changeWebPage(page) {
-    location.href = page + ".html";
+    window.location.assign(page + ".html")
 }
+
+//nav buttons from https://www.w3schools.com/js/js_window_location.asp
