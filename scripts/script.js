@@ -42,7 +42,7 @@ function toggleDarkTheme() {
     }
 }
 
-document.onload = function() {
+window.onload = function() {
     let theme = localStorage.getItem("theme");
     if(theme === "dark") {
         html.classList.remove(html.classList[0]);
