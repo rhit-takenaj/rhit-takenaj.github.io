@@ -1,6 +1,6 @@
 const home_button = document.getElementsByClassName("home_button")[0];
 home_button.addEventListener("click", function() {
-    changeWebPage("home");
+    changeWebPage("index");
 });
 
 const resume_button = document.getElementsByClassName("resume_button")[0];
