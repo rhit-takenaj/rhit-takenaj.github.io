@@ -29,30 +29,33 @@ function changeWebPage(page) {
 
 function toggleDarkTheme() {
     let theme = html.classList[0];
-    //let theme_icon = window.getElementById("theme_icon");
+    let theme_icon = document.getElementById("theme_icon");
     if(theme === "light") {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
         toggle_theme.innerHTML = "Light Theme";
-        document.getElementById("theme_icon").src = "media/sun.svg";
+        // document.getElementById("theme_icon").src = "media/sun.svg";
+        theme_icon.src = "../media/sun.svg";
         localStorage.setItem("theme", "dark");
     } else {
         html.classList.remove(html.classList[0]);
         html.classList.add("light");
         toggle_theme.innerHTML = "Dark Theme";
-        document.getElementById("theme_icon").src = "media/moon.svg";
+        // document.getElementById("theme_icon").src = "media/moon.svg";
+        theme_icon.src = "../media/moon.svg";
         localStorage.setItem("theme", "light");
     }
 }
 
 window.onload = function() {
     let theme = localStorage.getItem("theme");
+    let theme_icon = document.getElementById("theme_icon");
     if(theme === "dark") {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
         toggle_theme.innerHTML = "Light Theme";
-        document.getElementById("theme_icon").src = "media/sun.svg";
-        //theme_icon.src = "media/sun.svg";
+        theme_icon.src = "../media/sun.svg";
+        // document.getElementById("theme_icon").src = "media/sun.svg";
     }
 }
 
