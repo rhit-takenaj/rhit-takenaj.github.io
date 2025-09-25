@@ -10,7 +10,7 @@
 
 .header_buttons {
     width: 32%;
-    height: 10%;
+    line-height: 10%;
     margin: auto;
     
 }
@@ -19,6 +19,7 @@
     width: 23%;
     height: 100%;
     padding: 0;
+    margin: 0;
     border-radius: 0;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -38,6 +39,7 @@
 
 .personal_info h1 {
     font-size: 2em;
+    color: red;
 }
 
 .personal_info p {
