@@ -35,6 +35,7 @@ function toggleDarkTheme() {
         html.classList.add("dark");
         console.log("theme_icon src before:" + theme_icon.src);
         toggle_theme.innerHTML = "Light Theme";
+        toggle_theme.src = "../media/sun.svg"
         console.log("theme_icon src after:" + theme_icon.src);
         localStorage.setItem("theme", "dark");
     } else {
@@ -42,7 +43,7 @@ function toggleDarkTheme() {
         html.classList.add("light");
         toggle_theme.innerHTML = "Dark Theme";
         console.log("theme_icon src before:" + theme_icon.src);
-        theme_icon.src = "../media/moon.svg";
+        toggle_theme.src = "../media/moon.svg";
         console.log("theme_icon src after:" + theme_icon.src);
         localStorage.setItem("theme", "light");
     }
@@ -54,7 +55,7 @@ window.onload = function() {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
         toggle_theme.innerHTML = "Light Theme";
-        theme_icon.src = "../media/sun.svg";
+        toggle_theme.src = "../media/sun.svg";
     }
 }
 
