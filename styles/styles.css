@@ -29,11 +29,11 @@
 
 .float_right {
     float: right;
+    padding-right: 5%;
 }
 
 .personal_info h1 {
     font-size: 2em;
-    padding-right: 5%;
 }
 
 .personal_info p {
