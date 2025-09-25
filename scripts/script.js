@@ -1,5 +1,4 @@
 let html = document.getElementById("html");
-const theme_icon = document.getElementById("theme_icon");
 
 const home_button = document.getElementsByClassName("home_button")[0];
 home_button.addEventListener("click", function() {
@@ -33,16 +32,12 @@ function toggleDarkTheme() {
     if(theme === "light") {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
-        console.log("theme_icon src before:" + theme_icon.src);
-        toggle_theme.innerHTML = "<img src='media/sun.svg' alt='' id='theme_icon'> Light Theme";
-        console.log("theme_icon src after:" + theme_icon.src);
+        toggle_theme.innerHTML = "<img src='media/sun.svg' alt=''> Light Theme";
         localStorage.setItem("theme", "dark");
     } else {
         html.classList.remove(html.classList[0]);
         html.classList.add("light");
-        console.log("theme_icon src before:" + theme_icon.src);
-        toggle_theme.innerHTML = "<img src='media/moon.svg' alt='' id='theme_icon'> Dark Theme";
-        console.log("theme_icon src after:" + theme_icon.src);
+        toggle_theme.innerHTML = "<img src='media/moon.svg' alt=''> Dark Theme";
         localStorage.setItem("theme", "light");
     }
 }
@@ -54,7 +49,7 @@ window.onload = function() {
     if(theme === "dark") {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
-        toggle_theme.innerHTML = "<img src='media/sun.svg' alt='' id='theme_icon'> Light Theme";
+        toggle_theme.innerHTML = "<img src='media/sun.svg' alt=''> Light Theme";
     }
 }
 

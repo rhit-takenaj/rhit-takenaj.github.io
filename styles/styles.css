@@ -16,6 +16,7 @@
 .navigation_buttons {
     width: 33%;
     margin: auto;
+    
 }
 
 .navigation_buttons button {
@@ -32,6 +33,7 @@
 
 .personal_info h1 {
     font-size: 2em;
+    padding-right: 5%;
 }
 
 .personal_info p {
@@ -46,7 +48,5 @@
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
 }
-/* circle image from https://stackoverflow.com/questions/28700841/how-to-make-a-circular-image-in-css */
 
-span {
-}
+/* circle image from https://stackoverflow.com/questions/28700841/how-to-make-a-circular-image-in-css */
