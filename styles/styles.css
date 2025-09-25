@@ -14,13 +14,13 @@
 }
 
 .navigation_buttons {
-    width: 33%;
+    width: 50%;
     margin: auto;
     
 }
 
 .navigation_buttons button {
-    width: 32%;
+    width: 25%;
 }
 
 .centered {
