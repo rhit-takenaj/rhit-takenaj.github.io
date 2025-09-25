@@ -32,7 +32,6 @@
 
 .personal_info h1 {
     font-size: 2em;
-    color: red;
 }
 
 .personal_info p {
@@ -50,5 +49,4 @@
 /* circle image from https://stackoverflow.com/questions/28700841/how-to-make-a-circular-image-in-css */
 
 span {
-    text-align: right;
 }
