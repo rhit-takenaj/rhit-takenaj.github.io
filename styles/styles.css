@@ -47,3 +47,7 @@
     -o-border-radius: 50%;
 }
 /* circle image from https://stackoverflow.com/questions/28700841/how-to-make-a-circular-image-in-css */
+
+span {
+    text-align: right;
+}
