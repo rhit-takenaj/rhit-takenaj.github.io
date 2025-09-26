@@ -21,8 +21,7 @@
 }
 
 .resume_title {
-    color: red;
-    background-color: green;
+
 }
 
 .header_buttons button {
@@ -53,7 +52,7 @@ heading {
     font-size: 2em;
 }
 
-.personal_info p {
+.personal_info {
     font-size: 1.5em;
 }
 
