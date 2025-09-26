@@ -59,12 +59,12 @@ function setFourBoxesHeight() {
     let height = 0;
     console.log("height is now " + height);
     for(let i=0; i<fourBoxes.length; i++) {
-        if(fourBoxes[i].height > height) {
-            height = fourBoxes[i].height;
+        if(fourBoxes[i].offsetHeight > height) {
+            height = fourBoxes[i].offsetHeight;
             console.log("height is now " + height);
         }
     }
-    fourBoxes.style.height = height;
+    fourBoxes.setAttribute("height", height);
     console.log("the heigh of all the boxes is " + height);
 }
 
