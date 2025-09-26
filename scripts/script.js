@@ -53,4 +53,15 @@ window.onload = function() {
     }
 }
 
+function setFourBoxesHeight() {
+    let fourBoxes = document.getElementsByClassName("four_boxes");
+    let height = fourBoxes[0].height;
+    for(let i=0; i<fourBoxes.length; i++) {
+        if(fourBoxes[i].height > height) {
+            height = fourBoxes[i].height;
+        }
+    }
+    fourBoxes.style.height = height;
+}
+
 //keeping theme consistent throughout page change from https://stackoverflow.com/questions/33176739/how-to-carry-across-changes-made-to-a-css-style-over-different-pages
