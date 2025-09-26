@@ -51,7 +51,7 @@ window.addEventListener("load", function() {
         html.classList.add("dark");
         toggle_theme.innerHTML = "<img src='media/sun.svg' alt=''> Light Theme";
     }
-    console.log("this is current url: " + this.window.location.href);
+    console.log("this is current url 2.0: " + this.window.location.href);
     if(this.window.location.href === "https://rhit-takenaj.github.io/resume.html") {
         setFourBoxesHeight();
     }
