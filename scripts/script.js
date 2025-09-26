@@ -51,11 +51,11 @@ window.addEventListener("load", function() {
         html.classList.add("dark");
         toggle_theme.innerHTML = "<img src='media/sun.svg' alt=''> Light Theme";
     }
-    console.log("this is current url: " + this.window.URL);
-    if(this.window.URL === "https://rhit-takenaj.github.io/resume.html") {
+    console.log("this is current url: " + this.window.location.href);
+    if(this.window.location.href === "https://rhit-takenaj.github.io/resume.html") {
         setFourBoxesHeight();
     }
-    if(this.window.URL === "https://rhit-takenaj.github.io/portfolio.html") {
+    if(this.window.location.href === "https://rhit-takenaj.github.io/portfolio.html") {
         setProjectImgWidth();
     }
 });
