@@ -82,10 +82,11 @@ function setFourBoxesHeight() {
 function setProjectImgWidth() {
     let screenWidth = window.screen.width;
     let projImgs = document.getElementsByClassName("project_img");
-    // for(let i=0; i<projImgs.length; i++) {
-    //     projImgs
-    // }
-    projImgs.width = screenWidth * 0.3;
-    console.log("trying to set width of proj imgs to" + (screenWidth * 0.3));
+    for(let i=0; i<projImgs.length; i++) {
+        if(projImgs[i].width > 0.3 * screenWidth) {
+            projImgs[i].width = screenWidth * 0.3;
+            console.log("set img " + i + " width to 0.3 screen width");
+        }
+    }
 }
 
