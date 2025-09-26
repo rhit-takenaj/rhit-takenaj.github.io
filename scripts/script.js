@@ -52,7 +52,10 @@ window.onload = function() {
         toggle_theme.innerHTML = "<img src='media/sun.svg' alt=''> Light Theme";
     }
     setFourBoxesHeight();
+    setProjectImgWidth();
 }
+
+//keeping theme consistent throughout page change from https://stackoverflow.com/questions/33176739/how-to-carry-across-changes-made-to-a-css-style-over-different-pages
 
 function setFourBoxesHeight() {
     let fourBoxes = document.getElementsByClassName("four_boxes");
@@ -71,4 +74,13 @@ function setFourBoxesHeight() {
     console.log("the height of all the boxes is " + height);
 }
 
-//keeping theme consistent throughout page change from https://stackoverflow.com/questions/33176739/how-to-carry-across-changes-made-to-a-css-style-over-different-pages
+function setProjectImgWidth() {
+    let screenWidth = window.screen.width;
+    let projImgs = document.getElementsByClassName("project_img");
+    // for(let i=0; i<projImgs.length; i++) {
+    //     projImgs
+    // }
+    projImgs.width = screenWidth * 0.3;
+    console.log("trying to set width of proj imgs to" + (screenWidth * 0.3));
+}
+
