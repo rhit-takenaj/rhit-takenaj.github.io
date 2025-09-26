@@ -20,6 +20,10 @@
     margin: auto;
 }
 
+.projects {
+    height: 150px;
+}
+
 .four_boxes {
     width: 45%;
     display: inline-block;
