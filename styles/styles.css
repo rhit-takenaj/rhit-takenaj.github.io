@@ -49,6 +49,10 @@ heading {
     float: right;
 }
 
+.float_left {
+    float: left;
+}
+
 .personal_info h1 {
     font-size: 2em;
 }
