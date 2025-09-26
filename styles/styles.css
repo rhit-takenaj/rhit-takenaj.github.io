@@ -18,7 +18,9 @@
 .four_boxes {
     width: 45%;
     display: inline-block;
-    background-color: red;
+    background-color: blue;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .resume_title {
