@@ -10,6 +10,7 @@
 
 .header_buttons {
     width: 32%;
+    line-height: 150%;
     margin: auto;
     
 }
@@ -23,7 +24,7 @@
 
 .header_buttons button {
     width: 23%;
-    line-height: 150%;
+    height: 100%;
     margin: 0px;
     border-radius: 0;
     -webkit-border-radius: 0;
