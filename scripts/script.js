@@ -66,7 +66,9 @@ function setFourBoxesHeight() {
     }
     // fourBoxes.setAttribute("height", height);
     fourBoxes.offsetHeight = height;
-    console.log("the heigh of all the boxes is " + height);
+    let skillsHeight = document.getElementsByClassName("skills")[0].offsetHeight;
+    console.log("height of skills is " + skillsHeight);
+    console.log("the height of all the boxes is " + height);
 }
 
 //keeping theme consistent throughout page change from https://stackoverflow.com/questions/33176739/how-to-carry-across-changes-made-to-a-css-style-over-different-pages
