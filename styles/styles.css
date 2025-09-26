@@ -15,11 +15,10 @@
 }
 
 .four_boxes {
-    width: 50%;
+    width: 45%;
 }
 
 .resume_title {
-    color: red;
 }
 
 .header_buttons button {
@@ -32,6 +31,10 @@
     -ms-border-radius: 0;
     -o-border-radius: 0;
 
+}
+
+heading {
+    text-decoration: underline;
 }
 
 .centered {
