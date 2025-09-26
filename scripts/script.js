@@ -51,17 +51,21 @@ window.onload = function() {
         html.classList.add("dark");
         toggle_theme.innerHTML = "<img src='media/sun.svg' alt=''> Light Theme";
     }
+    setFourBoxesHeight();
 }
 
 function setFourBoxesHeight() {
     let fourBoxes = document.getElementsByClassName("four_boxes");
     let height = fourBoxes[0].height;
+    console.log("height is now " + height);
     for(let i=0; i<fourBoxes.length; i++) {
         if(fourBoxes[i].height > height) {
             height = fourBoxes[i].height;
+            console.log("height is now " + height);
         }
     }
     fourBoxes.style.height = height;
+    console.log("the heigh of all the boxes is " + height);
 }
 
 //keeping theme consistent throughout page change from https://stackoverflow.com/questions/33176739/how-to-carry-across-changes-made-to-a-css-style-over-different-pages
