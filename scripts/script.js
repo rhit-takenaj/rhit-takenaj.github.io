@@ -64,7 +64,8 @@ function setFourBoxesHeight() {
             console.log("height is now " + height);
         }
     }
-    fourBoxes.setAttribute("height", height);
+    // fourBoxes.setAttribute("height", height);
+    fourBoxes.offsetHeight = height;
     console.log("the heigh of all the boxes is " + height);
 }
 
