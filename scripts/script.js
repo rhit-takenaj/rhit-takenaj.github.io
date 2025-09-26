@@ -75,7 +75,9 @@ function setFourBoxesHeight() {
     // fourBoxes.setAttribute("height", height);
     fourBoxes.offsetHeight = height;
     let skillsHeight = document.getElementsByClassName("skills")[0].offsetHeight;
+    let educationHeight = document.getElementsByClassName("education")[0].offsetHeight;
     console.log("height of skills is " + skillsHeight);
+    console.log("the height of education is " + educationHeight);
     console.log("the height of all the boxes is " + height);
 }
 
