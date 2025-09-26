@@ -44,16 +44,21 @@ function toggleDarkTheme() {
 
 //icon update from https://stackoverflow.com/questions/35742199/how-to-add-image-to-button-via-javascript
 
-window.onload = function() {
+window.addEventListener("load", function() {
     let theme = localStorage.getItem("theme");
     if(theme === "dark") {
         html.classList.remove(html.classList[0]);
         html.classList.add("dark");
         toggle_theme.innerHTML = "<img src='media/sun.svg' alt=''> Light Theme";
     }
-    setFourBoxesHeight();
-    setProjectImgWidth();
-}
+    console.log("this is current url: " + this.window.URL);
+    if(this.window.URL === "https://rhit-takenaj.github.io/resume.html") {
+        setFourBoxesHeight();
+    }
+    if(this.window.URL === "https://rhit-takenaj.github.io/portfolio.html") {
+        setProjectImgWidth();
+    }
+});
 
 //keeping theme consistent throughout page change from https://stackoverflow.com/questions/33176739/how-to-carry-across-changes-made-to-a-css-style-over-different-pages
 
