@@ -56,7 +56,7 @@ window.onload = function() {
 
 function setFourBoxesHeight() {
     let fourBoxes = document.getElementsByClassName("four_boxes");
-    let height = fourBoxes[0].height;
+    let height = 0;
     console.log("height is now " + height);
     for(let i=0; i<fourBoxes.length; i++) {
         if(fourBoxes[i].height > height) {
