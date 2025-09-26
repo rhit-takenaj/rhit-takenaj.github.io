@@ -73,7 +73,10 @@ function setFourBoxesHeight() {
         }
     }
     // fourBoxes.setAttribute("height", height);
-    fourBoxes.offsetHeight = height;
+    // fourBoxes.offsetHeight = height;
+    for(let i=0; i<fourBoxes.length; i++) {
+        fourBoxes[i].offsetHeight = height;
+    }
     let skillsHeight = document.getElementsByClassName("skills")[0].offsetHeight;
     let educationHeight = document.getElementsByClassName("education")[0].offsetHeight;
     console.log("height of skills is " + skillsHeight);
