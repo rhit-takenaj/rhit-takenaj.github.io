@@ -33,6 +33,10 @@ a {
   background-color: azure;
 }
 
+.dark .row section {
+    background-color: #29313d;
+}
+
 /*boxes from https://stackoverflow.com/questions/54917163/how-to-create-a-4-boxes-square-with-html-css, even spacing from: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content*/
 
 section {
