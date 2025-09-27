@@ -53,7 +53,6 @@ window.addEventListener("load", function() {
     }
     console.log("this is current url 2.0: " + this.window.location.href);
     if(this.window.location.href === "https://rhit-takenaj.github.io/resume.html") {
-        // setFourBoxesHeight();
     }
     if(this.window.location.href === "https://rhit-takenaj.github.io/portfolio.html") {
         setProjectImgWidth();
@@ -62,33 +61,8 @@ window.addEventListener("load", function() {
 
 //keeping theme consistent throughout page change from https://stackoverflow.com/questions/33176739/how-to-carry-across-changes-made-to-a-css-style-over-different-pages
 
-function setFourBoxesHeight() {
-    let fourBoxes = document.getElementsByClassName("four_boxes");
-    let height = 0;
-    console.log("height is now " + height);
-    for(let i=0; i<fourBoxes.length; i++) {
-        if(fourBoxes[i].offsetHeight > height) {
-            height = fourBoxes[i].offsetHeight;
-            console.log("height is now " + height);
-        }
-    }
-    // fourBoxes.setAttribute("style", "height:"+height);
-    fourBoxes.offsetHeight = height;
-    for(let i=0; i<fourBoxes.length; i++) {
-        console.log("looping through all the four boxes");
-        fourBoxes[i].setAttribute("style", "height:"+height);
-        console.log("box " + i + "height = " + height);
-    }
-    let skillsHeight = document.getElementsByClassName("skills")[0].offsetHeight;
-    let educationHeight = document.getElementsByClassName("education")[0].offsetHeight;
-    console.log("height of skills is " + skillsHeight);
-    console.log("the height of education is " + educationHeight);
-    console.log("the height of all the boxes is " + height);
-}
-
 function setProjectImgWidth() {
     let screenWidth = window.screen.width;
-    //let projectSections = document.getElementsByClassName("projects");
     let maxImgHeight = 0;
     let projImgs = document.getElementsByClassName("project_img");
     for(let i=0; i<projImgs.length; i++) {
@@ -100,6 +74,4 @@ function setProjectImgWidth() {
             maxImgHeight = projImgs[i].offsetHeight;
         }
     }
-    // projectSections.height = maxImgHeight * 1.5;
-    // console.log("proj section height: " + projectSections.height);
 }
