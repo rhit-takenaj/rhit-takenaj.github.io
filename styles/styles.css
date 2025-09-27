@@ -73,6 +73,10 @@ heading {
     font-size: 1.5em;
 }
 
+.project_img {
+    margin: 5px;
+}
+
 .image_of_me img {
     width: 25%;
     border-radius: 50%;
