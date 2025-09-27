@@ -26,6 +26,8 @@ a {
 
 .row section {
   width: 47%;
+  border: solid;
+  margin: 5px;
 }
 
 .noMargin {
