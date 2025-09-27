@@ -32,6 +32,7 @@ a {
 
 .four_boxes {
     width: 500px;
+    margin: auto;
     display: inline-block;
     border: solid;
     margin-top: 5px;
