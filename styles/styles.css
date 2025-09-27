@@ -22,7 +22,7 @@ a {
 .row {
   display: flex;
   width: 100%;
-  margin: auto;
+  align-items: center;
 }
 
 .row section {
@@ -49,7 +49,7 @@ a {
 }
 
 .four_boxes {
-    background-color: blue;
+    background-color: red;
     /* width: 50%;
     margin: auto;
     display: inline-block;
