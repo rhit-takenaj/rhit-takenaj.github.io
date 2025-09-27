@@ -88,7 +88,7 @@ function setFourBoxesHeight() {
 
 function setProjectImgWidth() {
     let screenWidth = window.screen.width;
-    let projectSections = document.getElementsByClassName("projects");
+    //let projectSections = document.getElementsByClassName("projects");
     let maxImgHeight = 0;
     let projImgs = document.getElementsByClassName("project_img");
     for(let i=0; i<projImgs.length; i++) {

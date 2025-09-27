@@ -43,14 +43,15 @@ a {
     height: 400px;
 }
 
-/* .four_boxes {
-    width: 50%;
+.four_boxes {
+    background-color: red;
+    /* width: 50%;
     margin: auto;
     display: inline-block;
     border: solid;
     margin-top: 5px;
-    margin-bottom: 5px;
-} */
+    margin-bottom: 5px; */
+}
 
 .header_buttons button {
     width: 23%;
