@@ -19,25 +19,38 @@ a {
     color:#3366CC;
 }
 
-.boxes {
-    /*width: 80%;*/
-    /*margin: auto;*/
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.row div {
+  width: 50%;
+}
+
+.noMargin {
+  margin: 0px;
+}
+
+/* .boxes {
+    width: 80%;
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-}
+} */
 
 .projects {
     height: 400px;
 }
 
-.four_boxes {
-    width: 500px;
+/* .four_boxes {
+    width: 50%;
     margin: auto;
     display: inline-block;
     border: solid;
     margin-top: 5px;
     margin-bottom: 5px;
-}
+} */
 
 .header_buttons button {
     width: 23%;
