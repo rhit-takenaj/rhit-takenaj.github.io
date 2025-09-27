@@ -35,9 +35,12 @@ a {
 
 /*boxes from https://stackoverflow.com/questions/54917163/how-to-create-a-4-boxes-square-with-html-css, even spacing from: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content*/
 
+section {
+    font-size: 1.5em;
+}
+
 .projects {
     height: 400px;
-    font-size: 1.5em;
 }
 
 .header_buttons button {
