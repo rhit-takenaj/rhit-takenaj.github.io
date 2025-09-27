@@ -49,6 +49,11 @@ h2 {
 
 .projects {
     height: 400px;
+    background-color: azure;
+}
+
+.dark .projects {
+    background-color: #29313d;
 }
 
 .header_buttons button {
@@ -66,7 +71,6 @@ h2 {
 heading {
     text-decoration: underline;
     font-size: large;
-    color: red;
 }
 
 .centered {
