@@ -18,11 +18,12 @@
 .boxes {
     width: 95%;
     margin: auto;
+    display: grid;
 }
 
 .projects {
     height: 250px;
-    background-color: purple;
+    background-color: red;
 }
 
 .four_boxes {
