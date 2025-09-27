@@ -29,7 +29,8 @@ a {
   width: 47%;
   border: solid;
   margin: 5px;
-  padding: 1.5px;
+  padding: 4px;
+  background-color: azure;
 }
 
 /*boxes from https://stackoverflow.com/questions/54917163/how-to-create-a-4-boxes-square-with-html-css, even spacing from: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content*/
