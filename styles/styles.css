@@ -25,11 +25,11 @@ a {
 }
 
 .row div {
-  width: 50%;
+  width: 47%;
 }
 
 .noMargin {
-  margin: 0px;
+  margin: 5px;
 }
 
 /* .boxes {
