@@ -53,7 +53,7 @@ window.addEventListener("load", function() {
     }
     console.log("this is current url 2.0: " + this.window.location.href);
     if(this.window.location.href === "https://rhit-takenaj.github.io/resume.html") {
-        setFourBoxesHeight();
+        // setFourBoxesHeight();
     }
     if(this.window.location.href === "https://rhit-takenaj.github.io/portfolio.html") {
         setProjectImgWidth();
