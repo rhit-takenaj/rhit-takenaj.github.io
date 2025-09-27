@@ -66,6 +66,7 @@ h2 {
 heading {
     text-decoration: underline;
     font-size: large;
+    color: red;
 }
 
 .centered {
