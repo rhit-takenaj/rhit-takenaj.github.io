@@ -100,6 +100,6 @@ function setProjectImgWidth() {
             maxImgHeight = projImgs[i].offsetHeight;
         }
     }
-    projectSections.height = maxImgHeight;
+    projectSections.height = maxImgHeight * 1.5;
     console.log("proj section height: " + projectSections.height);
 }
