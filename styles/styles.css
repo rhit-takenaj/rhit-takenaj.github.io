@@ -24,13 +24,11 @@
 
 .projects {
     height: 400px;
-    background-color: red;
 }
 
 .four_boxes {
     width: 70%;
     display: inline-block;
-    background-color: red;
     border: solid;
     margin-top: 5px;
     margin-bottom: 5px;
