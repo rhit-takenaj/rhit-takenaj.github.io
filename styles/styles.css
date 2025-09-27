@@ -23,7 +23,8 @@ a {
   display: flex;
   width: 100%;
   /* align-items: center; */
-  margin: auto;
+  /* margin: auto; */
+  justify-content: space-evenly;
 }
 
 .row section {
