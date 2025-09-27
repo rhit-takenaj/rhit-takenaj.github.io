@@ -22,8 +22,6 @@ a {
 .row {
   display: flex;
   width: 100%;
-  /* align-items: center; */
-  /* margin: auto; */
   justify-content: space-evenly;
 }
 
@@ -34,30 +32,11 @@ a {
   padding: 1.5px;
 }
 
-.noMargin {
-  /* margin: 5px; */
-}
-
-/* .boxes {
-    width: 80%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-} */
+/*boxes from https://stackoverflow.com/questions/54917163/how-to-create-a-4-boxes-square-with-html-css, even spacing from: https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content*/
 
 .projects {
     height: 400px;
     font-size: 1.5em;
-}
-
-.four_boxes {
-    background-color: yellow;
-    /* width: 50%;
-    margin: auto;
-    display: inline-block;
-    border: solid;
-    margin-top: 5px;
-    margin-bottom: 5px; */
 }
 
 .header_buttons button {
